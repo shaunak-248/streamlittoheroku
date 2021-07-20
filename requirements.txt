@@ -1,5 +1,5 @@
 numpy>=1.9.2
-tensorflow>=1.15
+tensorflow-cpu>=1.15
 matplotlib>=1.4.3
 pandas>=0.19
 pathlib
