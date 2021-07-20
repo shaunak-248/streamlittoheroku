@@ -49,7 +49,7 @@ def load_model():
 with st.spinner('Model is being loaded..'):
   model=load_model()
 st.write("""
-         # animal
+        # Flower Classification
          """
          )
 file = st.file_uploader("Please upload an brain scan file", type=["jpg", "png"])
