@@ -1,6 +1,3 @@
-import streamlit as st
-#import matplotlib.pyplot as plt
-import numpy as np
 import os
 import PIL
 import tensorflow as tf
@@ -16,7 +13,7 @@ data_dir = pathlib.Path(data_dir)
 roses = list(data_dir.glob('roses/*'))
 print(roses[0])
 PIL.Image.open(str(roses[0]))
-img_height,img_width=180,180
+img_height,img_width=192,192
 batch_size=32
 train_ds = tf.keras.preprocessing.image_dataset_from_directory(
   data_dir,
@@ -60,7 +57,7 @@ from PIL import Image, ImageOps
 import numpy as np
 st.set_option('deprecation.showfileUploaderEncoding', False)
 def import_and_predict(image_data, model):
-        size = (180,180)
+        size = (192,192)
         image = ImageOps.fit(image_data, size, Image.ANTIALIAS)
         image = np.asarray(image)
         img = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
@@ -86,3 +83,4 @@ else:
     # "This image most likely belongs to {} with a {:.2f} percent confidence."
     # .format(class_names[np.argmax(score)], 100 * np.max(score)))
     st.text(final)
+
