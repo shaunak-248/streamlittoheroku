@@ -34,7 +34,7 @@ val_ds = tf.keras.preprocessing.image_dataset_from_directory(
   batch_size=batch_size)
 class_names = train_ds.class_names
 print(class_names)
--
+
 #import matplotlib.pyplot as plt
 #plt.figure(figsize=(10, 10))
 #for images, labels in train_ds.take(1):
