@@ -3,4 +3,5 @@ tensorflow-cpu>=1.15
 matplotlib>=1.4.3
 pandas>=0.19
 pathlib
+opencv-python-headless>=4.2.0.32
 streamlit
